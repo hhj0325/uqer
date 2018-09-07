@@ -8,7 +8,14 @@ def call_option_pricer(spot, strike, maturity, r, vol):
 
     price = spot * norm.cdf(d1) - strike * exp(-r * maturity) * norm.cdf(d2)
     return price
-
+print('demo1 %s' % __name__)
 
 if __name__ == '__main__':
-    print(call_option_pricer(2.45, 2.50, 0.25, 0.05, 0.25))
+    # 参数
+    spot1 = 2.45
+    strike1 = 2.50
+    maturity1 = 0.25
+    r1 = 0.05
+    vol1 = 0.25
+
+    print('期权价格 : %.4f' % call_option_pricer(spot1, strike1, maturity1, r1, vol1))
