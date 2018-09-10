@@ -13,3 +13,4 @@ pylab.title('calc cost seconds',  fontsize=18)
 pylab.ylabel('time(s)',  fontsize=15)
 pylab.xlabel('count',  fontsize=15)
 pylab.show()
+
